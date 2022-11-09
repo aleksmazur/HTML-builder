@@ -14,7 +14,7 @@ const foldersFiles = async () => {
 			const extName = path.extname(item).substring(1);
 			const fileName = path.basename(item, path.extname(item));
 			const size = stat.size;	
-			console.log(`${fileName} - ${extName} - ${size}`)
+			console.log(`${fileName} - ${extName} - ${size}b`)
 		}
 	});
 };
